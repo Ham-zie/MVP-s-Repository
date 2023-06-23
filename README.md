@@ -1,7 +1,7 @@
 # MVP-s-Repository
 MVP Review
 
-Screenshot_of_portfolio.png
+MVP-s-Repository/alien_invasion/images/Screenshot_of_portfolio.png
 Title of the Project: Alien Invasion
 
 
