@@ -1,3 +1,4 @@
+# importing classes and packages and modules
 from settings import Settings
 from ship import Ship
 from birds import Bird
@@ -11,6 +12,7 @@ from alien import Alien
 import sys
 import pygame
 
+# main game function
 def run_game():
     # Initializing pygame, screen and settings object
     pygame.init()
@@ -36,10 +38,11 @@ def run_game():
 
     # Start the main loop for the game
     while True:
+        # check for events
         gf.check_events(ai_settings, screen, stats, sb, play_button, ship,
  aliens, bullets)
 
-
+# If game is active, then do the necessary updates
         if stats.game_active:
             ship.update()
             bullets.update()
