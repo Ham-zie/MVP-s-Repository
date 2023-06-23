@@ -19,12 +19,15 @@ def check_events(ai_settings, screen, stats, sb, play_button, ship,
         if event.type == pygame.QUIT:
             sys.exit()
 
+     # if event type is a key press, do the necessary actions
         elif event.type == pygame.KEYDOWN:
             check_keydown_events(event, ai_settings, bullets, screen, ship)
 
+     # if event type is a key release, do the necessary actions
         elif event.type == pygame.KEYUP:
             check_keyup_events(event, ship)
 
+     # if event type is a mouse press, do necessary actions
         elif event.type == pygame.MOUSEBUTTONDOWN:
             mouse_x, mouse_y = pygame.mouse.get_pos()
             check_play_button(ai_settings, screen, stats, sb, play_button, ship,
