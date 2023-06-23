@@ -27,10 +27,12 @@ class Ship(Sprite):
         self.moving_right = False
         self.moving_left = False
 
+    # Center the ship
     def center_ship(self):
         """center the ship on the screen."""
         self.center = self.screen_rect.centerx
 
+    # update the ship to respond to events
     def update(self):
         """update the ship's center value, not the rect. """
         if self.moving_right and self.rect.right < self.screen_rect.right:
@@ -43,6 +45,7 @@ class Ship(Sprite):
         self.rect.centerx = self.center
 
 
+    # Draw the ship to the screen
     def blitme(self):
         """Draw the ship at its current location """
         self.screen.blit(self.image, self.rect)
